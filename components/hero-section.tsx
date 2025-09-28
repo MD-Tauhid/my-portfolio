@@ -2,20 +2,33 @@
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
+import { Canvas } from "@react-three/fiber"
+import { Float, OrbitControls, useGLTF } from "@react-three/drei"
+
+function Jellyfish() {
+  const { scene } = useGLTF("/models/backgroundObj.glb") // <-- place your jellyfish .glb model in /public/models
+  return (
+    <Float speed={2} rotationIntensity={1} floatIntensity={2}>
+      <primitive object={scene} scale={5} position={[0, -2, 0]} />
+    </Float>
+  )
+}
 
 export function HeroSection() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* 3D Background Placeholder */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-card to-background">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-primary/5 rounded-full blur-3xl animate-pulse delay-500"></div>
-        </div>
+      {/* 3D Jellyfish Background */}
+      <div className="absolute left-[70%] inset-0 z-20">
+        <Canvas camera={{ position: [0, 0, 8], fov: 50 }}>
+          <ambientLight intensity={1} />
+          <directionalLight position={[5, 5, 5]} intensity={2} />
+          <pointLight position={[0, 0, 10]} intensity={1.5} />
+          <Jellyfish />
+          <OrbitControls enableZoom={false} enablePan={false} />
+        </Canvas>
       </div>
 
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto bg-transparent">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
