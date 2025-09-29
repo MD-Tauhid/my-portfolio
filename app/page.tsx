@@ -4,6 +4,7 @@ import { AboutSection } from "@/components/about-section"
 import { ProjectsSection } from "@/components/projects-section"
 import { SkillsSection } from "@/components/skills-section"
 import { ContactSection } from "@/components/contact-section"
+import { ExperienceSection } from "@/components/experience-section"
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <AboutSection />
       <ProjectsSection />
       <SkillsSection />
+      <ExperienceSection/>
       <ContactSection />
 
       <footer className="bg-card border-t border-border py-8 px-4 sm:px-6 lg:px-8">

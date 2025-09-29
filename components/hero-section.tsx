@@ -3,7 +3,8 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Canvas } from "@react-three/fiber"
-import { Float, OrbitControls, useGLTF } from "@react-three/drei"
+import { Float, OrbitControls, Preload, useGLTF } from "@react-three/drei"
+import { Suspense } from "react"
 
 function Jellyfish() {
   const { scene } = useGLTF("/models/backgroundObj.glb") // <-- place your jellyfish .glb model in /public/models
@@ -19,12 +20,15 @@ export function HeroSection() {
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* 3D Jellyfish Background */}
       <div className="absolute left-[70%] inset-0 z-20">
-        <Canvas camera={{ position: [0, 0, 8], fov: 50 }}>
+        <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 8], fov: 50 }}>
           <ambientLight intensity={1} />
           <directionalLight position={[5, 5, 5]} intensity={2} />
           <pointLight position={[0, 0, 10]} intensity={1.5} />
-          <Jellyfish />
+          <Suspense fallback={null}>
+            <Jellyfish />
+          </Suspense>
           <OrbitControls enableZoom={false} enablePan={false} />
+          <Preload all />
         </Canvas>
       </div>
 
