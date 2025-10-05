@@ -11,6 +11,13 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Mail, MapPin, Phone } from "lucide-react"
 
+const contactMe = [
+  { name: "github", url: "https://github.com/MD-Tauhid" },
+  { name: "linkedin", url: "https://www.linkedin.com/in/md-tauhidur-rahman/" },
+  { name: "twitter", url: "https://twitter.com/Tauhidur_Rahman" },
+  { name: "facebook", url: "https://www.facebook.com/TauhidurRahman" },
+]
+
 export function ContactSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
@@ -147,23 +154,29 @@ export function ContactSection() {
                 </div>
               </div>
             </div>
-
-            <div className="pt-8">
-              <h4 className="font-semibold text-foreground mb-4">Follow Me</h4>
-              <div className="flex space-x-4">
-                {["GitHub", "LinkedIn", "Twitter"].map((platform) => (
-                  <a
-                    key={platform}
-                    href="#"
-                    className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
-                  >
-                    <span className="text-sm font-medium">{platform[0]}</span>
-                  </a>
-                ))}
-              </div>
-            </div>
           </motion.div>
         </div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="text-center"
+        >
+          <div className="pt-8 flex flex-col items-center w-full">
+            <h4 className="font-semibold text-foreground mb-4">Follow Me</h4>
+            <div className="flex justify-center gap-4 w-full">
+              {contactMe.map((platform) => (
+                <a
+                  key={platform.name}
+                  href={platform.url}
+                  className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
+                >
+                  <span className="text-sm font-medium">{platform.name[0]}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   )

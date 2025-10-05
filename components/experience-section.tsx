@@ -53,7 +53,8 @@ export function ExperienceSection(): JSX.Element {
           custom={0}
           className="text-4xl font-bold text-center mb-12"
         >
-          Professional <span className="text-primary">Experience</span>
+          <div className="mb-4">Professional <span className="text-primary">Experience</span></div>
+          <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
         </motion.h2>
 
         {/* Timeline */}
