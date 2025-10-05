@@ -19,7 +19,7 @@ export function HeroSection() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* 3D Jellyfish Background */}
-      <div className="absolute left-[70%] inset-0 z-20">
+      <div className="absolute left-0 lg:left-[70%] inset-0 z-10 lg:z-20 pointer-events-none">
         <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 8], fov: 50 }}>
           <ambientLight intensity={1} />
           <directionalLight position={[5, 5, 5]} intensity={2} />

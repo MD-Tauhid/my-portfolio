@@ -13,25 +13,17 @@ type Experience = {
 
 const experiences: Experience[] = [
   {
-    role: "Full-Stack Developer",
-    company: "TechNova Solutions",
-    period: "2022 – Present",
-    description:
-      "Building scalable web apps with React, Next.js, and Node.js. Designed APIs, optimized database queries, and collaborated with UI/UX to deliver seamless digital products.",
-    technologies: ["React", "Next.js", "Node.js", "PostgreSQL", "AWS"],
-  },
-  {
-    role: "Frontend Engineer",
-    company: "Creative Labs",
-    period: "2020 – 2022",
+    role: "Junior Software Engineer",
+    company: "Suffix IT",
+    period: "Feb, 2024 – Present",
     description:
       "Developed interactive UIs and design systems. Focused on performance, accessibility, and pixel-perfect implementation of Figma designs.",
-    technologies: ["Vue.js", "TypeScript", "Tailwind", "Jest"],
+    technologies: ["React.js", "TypeScript", "Tailwind", "Jest"],
   },
   {
     role: "Software Engineer Intern",
-    company: "InnovateX",
-    period: "2019 – 2020",
+    company: "Suffix IT",
+    period: "Nov, 2023 – Jan, 2024",
     description:
       "Assisted in developing internal tools, automated testing workflows, and contributed to refactoring legacy codebases.",
     technologies: ["Python", "Django", "SQLite", "Docker"],

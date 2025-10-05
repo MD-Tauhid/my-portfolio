@@ -62,7 +62,7 @@ export function AboutSection() {
                 <div className="text-sm text-muted-foreground">Projects Completed</div>
               </div>
               <div className="text-center p-4 bg-card rounded-lg border border-border">
-                <div className="text-2xl font-bold text-primary">5+</div>
+                <div className="text-2xl font-bold text-primary">2+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
             </div>
