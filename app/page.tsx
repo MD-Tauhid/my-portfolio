@@ -5,6 +5,32 @@ import { ProjectsSection } from "@/components/projects-section"
 import { SkillsSection } from "@/components/skills-section"
 import { ContactSection } from "@/components/contact-section"
 import { ExperienceSection } from "@/components/experience-section"
+import { Metadata } from "next"
+
+// app/page.jsx
+export const metadata: Metadata = {
+  title: "Home | Tauhid.dev",
+  description: "Welcome to my portfolio — check out my work, skills, and projects.",
+  openGraph: {
+    title: "Tauhid Portfolio Home",
+    description: "Building innovative digital experiences with Next.js & TypeScript.",
+    url: "https://tauhid.dev",
+    images: [
+      {
+        url: "/og-image-home.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Tauhid Portfolio Home",
+      },
+    ],
+  },
+  twitter: {
+    title: "Tauhid | Developer Portfolio",
+    description: "Modern web developer portfolio built with Next.js 14.",
+    images: ["/og-image-home.jpg"],
+  },
+};
+
 
 export default function Home() {
   return (

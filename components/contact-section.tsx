@@ -202,6 +202,7 @@ export function ContactSection() {
                 >
                   <a
                     href={platform.url}
+                    target="_blank"
                     className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
                   >
                     {/* <span className="text-sm font-medium">{platform.name[0]}</span> */}
