@@ -43,7 +43,7 @@ const fadeUp = {
 export function ExperienceSection(): JSX.Element {
   return (
     <section id="experience" className="py-20 bg-background relative overflow-hidden">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <motion.h2
           variants={fadeUp}

@@ -191,7 +191,7 @@ export function ContactSection() {
         >
           <div className="pt-8 flex flex-col items-center w-full">
             <h4 className="text-2xl font-bold text-foreground mb-4">Follow Me</h4>
-            <div className="flex justify-center gap-4 w-full">
+            <div className="flex justify-center gap-9 w-full">
               {contactMe.map((platform, index) => (
                 <motion.span
                   key={platform.name}
@@ -203,7 +203,7 @@ export function ContactSection() {
                   <a
                     href={platform.url}
                     target="_blank"
-                    className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
+                    className="w-4 h-4 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
                   >
                     {/* <span className="text-sm font-medium">{platform.name[0]}</span> */}
                     <img src={platform.icon} alt={platform.name} className="object-fill" />
