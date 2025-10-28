@@ -28,11 +28,11 @@ export function AboutSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="relative">
-              <div className="w-80 h-80 mx-auto bg-gradient-to-br from-primary/20 to-accent/20 rounded-full flex items-center justify-center">
+              <div className="w-96 h-96 mx-auto bg-gradient-to-br from-primary/20 to-accent/20 rounded-full flex items-center justify-center">
                 <img
-                  src="/professional-developer-headshot.png"
+                  src="/tauhid.png"
                   alt="Profile"
-                  className="w-72 h-72 rounded-full object-cover border-4 border-primary/20"
+                  className="w-[22rem] h-[22rem] rounded-full object-cover border-4 border-primary/20"
                 />
               </div>
             </div>

@@ -82,6 +82,14 @@ export function HeroSection() {
           >
             View My Work
           </Button>
+          <Button
+            variant="outline"
+            size="lg"
+            className="bg-white"
+            onClick={() => document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })}
+          >
+            Download Resume
+          </Button>
         </motion.div>
       </div>
     </section>
