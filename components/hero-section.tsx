@@ -2,60 +2,35 @@
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { Canvas } from "@react-three/fiber"
-import { Float, OrbitControls, Preload, useGLTF } from "@react-three/drei"
-import { Suspense } from "react"
-
-function Jellyfish() {
-  const { scene } = useGLTF("/models/backgroundObj.glb") // <-- place your jellyfish .glb model in /public/models
-  return (
-    <Float speed={2} rotationIntensity={1} floatIntensity={2}>
-      <primitive object={scene} scale={5} position={[0, -2, 0]} />
-    </Float>
-  )
-}
+import { BackgroundBeams } from "@/components/ui/background-beams"
+import { TypewriterEffect } from "@/components/ui/typewriter-effect"
 
 export function HeroSection() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* 3D Jellyfish Background */}
-      <div className="absolute left-0 lg:left-[70%] inset-0 z-10 lg:z-20 pointer-events-none">
-        <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 8], fov: 50 }}>
-          <ambientLight intensity={1} />
-          <directionalLight position={[5, 5, 5]} intensity={2} />
-          <pointLight position={[0, 0, 10]} intensity={1.5} />
-          <Suspense fallback={null}>
-            <Jellyfish />
-          </Suspense>
-          <OrbitControls enableZoom={false} enablePan={false} />
-          <Preload all />
-        </Canvas>
-      </div>
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-background">
+      <BackgroundBeams />
 
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto bg-transparent">
-        <motion.h1
+      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance"
+          className="mb-6"
         >
-          Hi, I'm <span className="text-primary">Tauhidur Rahman</span>
-        </motion.h1>
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-4 tracking-tight">
+            Hi, I'm <span className="text-transparent bg-clip-text bg-primary">Tauhidur Rahman</span>
+          </h1>
+        </motion.div>
 
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl sm:text-2xl text-muted-foreground mb-8 text-pretty"
-        >
-          Full-Stack Developer & Creative Technologist
-        </motion.p>
+        <div className="mb-8">
+          <TypewriterEffect text="Full-Stack Developer & Creative Technologist" className="text-xl sm:text-2xl lg:text-4xl" />
+        </div>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto text-pretty"
+          className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto text-pretty leading-relaxed"
         >
           I craft digital experiences that blend cutting-edge technology with intuitive design, bringing ideas to life
           through code.
@@ -65,27 +40,27 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <Button
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-full shadow-lg shadow-primary/25 transition-all hover:scale-105"
             onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}
           >
             Hire Me
           </Button>
           <Button
-            variant="outline"
+            // variant="outline"
             size="lg"
-            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 text-lg bg-transparent"
+            className="border-primary/50 text-primary hover:bg-primary/10 hover:text-primary px-8 py-6 border-2 border-primary text-lg bg-transparent rounded-full backdrop-blur-sm transition-all hover:scale-105"
             onClick={() => document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })}
           >
             View My Work
           </Button>
           <Button
-            variant="outline"
+            // variant="ghost"
             size="lg"
-            className="bg-white"
+            className="text-primary-foreground px-8 py-6 text-lg rounded-full transition-all shadow-lg shadow-primary/25 hover:scale-105"
             onClick={() => document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })}
           >
             Download Resume

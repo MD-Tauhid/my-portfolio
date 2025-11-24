@@ -4,61 +4,108 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(0.098 0.024 240); /* Deep Blue #0a192f */
-  --foreground: oklch(1 0 0); /* White */
-  --card: oklch(0.157 0.016 240); /* Charcoal Gray #1c2530 */
-  --card-foreground: oklch(1 0 0); /* White */
-  --popover: oklch(0.969 0.013 180); /* Light Teal #e0f7fa */
-  --popover-foreground: oklch(0.098 0.024 240); /* Deep Blue */
-  --primary: oklch(0.478 0.089 174); /* Teal #00796b */
-  --primary-foreground: oklch(1 0 0); /* White */
-  --secondary: oklch(0.157 0.016 240); /* Charcoal Gray */
-  --secondary-foreground: oklch(1 0 0); /* White */
-  --muted: oklch(0.969 0.013 180); /* Light Teal */
-  --muted-foreground: oklch(0.157 0.016 240); /* Charcoal Gray */
-  --accent: oklch(0.478 0.089 174); /* Teal */
-  --accent-foreground: oklch(1 0 0); /* White */
+  --background: oklch(0.098 0.024 240);
+  /* Deep Blue #0a192f */
+  --foreground: oklch(1 0 0);
+  /* White */
+  --card: oklch(0.157 0.016 240);
+  /* Charcoal Gray #1c2530 */
+  --card-foreground: oklch(1 0 0);
+  /* White */
+  --popover: oklch(0.969 0.013 180);
+  /* Light Teal #e0f7fa */
+  --popover-foreground: oklch(0.098 0.024 240);
+  /* Deep Blue */
+  --primary: oklch(0.478 0.089 174);
+  /* Teal #00796b */
+  --primary-foreground: oklch(1 0 0);
+  /* White */
+  --secondary: oklch(0.157 0.016 240);
+  /* Charcoal Gray */
+  --secondary-foreground: oklch(1 0 0);
+  /* White */
+  --muted: oklch(0.969 0.013 180);
+  /* Light Teal */
+  --muted-foreground: oklch(0.157 0.016 240);
+  /* Charcoal Gray */
+  --accent: oklch(0.478 0.089 174);
+  /* Teal */
+  --accent-foreground: oklch(1 0 0);
+  /* White */
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.3 0.02 240); /* Subtle border */
-  --input: oklch(0.157 0.016 240); /* Charcoal Gray */
-  --ring: oklch(0.478 0.089 174 / 0.5); /* Teal with transparency */
-  --chart-1: oklch(0.478 0.089 174); /* Teal */
-  --chart-2: oklch(0.298 0.067 174); /* Darker Teal */
-  --chart-3: oklch(0.769 0.056 174); /* Light Teal */
-  --chart-4: oklch(0.828 0.035 174); /* Very Light Teal */
-  --chart-5: oklch(0.969 0.013 180); /* Lightest Teal */
+  --border: oklch(0.3 0.02 240);
+  /* Subtle border */
+  --input: oklch(0.157 0.016 240);
+  /* Charcoal Gray */
+  --ring: oklch(0.478 0.089 174 / 0.5);
+  /* Teal with transparency */
+  --chart-1: oklch(0.478 0.089 174);
+  /* Teal */
+  --chart-2: oklch(0.298 0.067 174);
+  /* Darker Teal */
+  --chart-3: oklch(0.769 0.056 174);
+  /* Light Teal */
+  --chart-4: oklch(0.828 0.035 174);
+  /* Very Light Teal */
+  --chart-5: oklch(0.969 0.013 180);
+  /* Lightest Teal */
   --radius: 0.5rem;
-  --sidebar: oklch(0.098 0.024 240); /* Deep Blue */
-  --sidebar-foreground: oklch(1 0 0); /* White */
-  --sidebar-primary: oklch(0.478 0.089 174); /* Teal */
-  --sidebar-primary-foreground: oklch(1 0 0); /* White */
-  --sidebar-accent: oklch(0.157 0.016 240); /* Charcoal Gray */
-  --sidebar-accent-foreground: oklch(1 0 0); /* White */
-  --sidebar-border: oklch(0.3 0.02 240); /* Subtle border */
-  --sidebar-ring: oklch(0.478 0.089 174 / 0.5); /* Teal with transparency */
+  --sidebar: oklch(0.098 0.024 240);
+  /* Deep Blue */
+  --sidebar-foreground: oklch(1 0 0);
+  /* White */
+  --sidebar-primary: oklch(0.478 0.089 174);
+  /* Teal */
+  --sidebar-primary-foreground: oklch(1 0 0);
+  /* White */
+  --sidebar-accent: oklch(0.157 0.016 240);
+  /* Charcoal Gray */
+  --sidebar-accent-foreground: oklch(1 0 0);
+  /* White */
+  --sidebar-border: oklch(0.3 0.02 240);
+  /* Subtle border */
+  --sidebar-ring: oklch(0.478 0.089 174 / 0.5);
+  /* Teal with transparency */
 }
 
 .dark {
-  --background: oklch(0.098 0.024 240); /* Deep Blue */
-  --foreground: oklch(1 0 0); /* White */
-  --card: oklch(0.157 0.016 240); /* Charcoal Gray */
-  --card-foreground: oklch(1 0 0); /* White */
-  --popover: oklch(0.157 0.016 240); /* Charcoal Gray */
-  --popover-foreground: oklch(1 0 0); /* White */
-  --primary: oklch(0.478 0.089 174); /* Teal */
-  --primary-foreground: oklch(1 0 0); /* White */
-  --secondary: oklch(0.2 0.02 240); /* Slightly lighter charcoal */
-  --secondary-foreground: oklch(1 0 0); /* White */
-  --muted: oklch(0.2 0.02 240); /* Slightly lighter charcoal */
-  --muted-foreground: oklch(0.8 0.01 240); /* Light gray */
-  --accent: oklch(0.478 0.089 174); /* Teal */
-  --accent-foreground: oklch(1 0 0); /* White */
+  --background: oklch(0.098 0.024 240);
+  /* Deep Blue */
+  --foreground: oklch(1 0 0);
+  /* White */
+  --card: oklch(0.157 0.016 240);
+  /* Charcoal Gray */
+  --card-foreground: oklch(1 0 0);
+  /* White */
+  --popover: oklch(0.157 0.016 240);
+  /* Charcoal Gray */
+  --popover-foreground: oklch(1 0 0);
+  /* White */
+  --primary: oklch(0.478 0.089 174);
+  /* Teal */
+  --primary-foreground: oklch(1 0 0);
+  /* White */
+  --secondary: oklch(0.2 0.02 240);
+  /* Slightly lighter charcoal */
+  --secondary-foreground: oklch(1 0 0);
+  /* White */
+  --muted: oklch(0.2 0.02 240);
+  /* Slightly lighter charcoal */
+  --muted-foreground: oklch(0.8 0.01 240);
+  /* Light gray */
+  --accent: oklch(0.478 0.089 174);
+  /* Teal */
+  --accent-foreground: oklch(1 0 0);
+  /* White */
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.3 0.02 240); /* Subtle border */
-  --input: oklch(0.2 0.02 240); /* Slightly lighter charcoal */
-  --ring: oklch(0.478 0.089 174 / 0.5); /* Teal with transparency */
+  --border: oklch(0.3 0.02 240);
+  /* Subtle border */
+  --input: oklch(0.2 0.02 240);
+  /* Slightly lighter charcoal */
+  --ring: oklch(0.478 0.089 174 / 0.5);
+  /* Teal with transparency */
   --chart-1: oklch(0.478 0.089 174);
   --chart-2: oklch(0.298 0.067 174);
   --chart-3: oklch(0.769 0.056 174);
@@ -119,11 +166,12 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   ::selection {
     @apply bg-primary text-white;
   }
 }
-
