@@ -4,11 +4,13 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { BackgroundBeams } from "@/components/ui/background-beams"
 import { TypewriterEffect } from "@/components/ui/typewriter-effect"
+import { HeroSocials } from "@/components/hero-socials"
 
 export function HeroSection() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-background">
       <BackgroundBeams />
+      <HeroSocials />
 
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <motion.div

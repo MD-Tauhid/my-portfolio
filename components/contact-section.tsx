@@ -11,23 +11,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Mail, MapPin, Phone } from "lucide-react"
 
-const contactMe = [
-  {
-    name: "github",
-    url: "https://github.com/MD-Tauhid",
-    icon: "https://cdn.simpleicons.org/github/808080", // gray
-  },
-  {
-    name: "linkedin",
-    url: "https://www.linkedin.com/in/tauhidur-rahman01/",
-    icon: "https://img.icons8.com/ios-filled/50/808080/linkedin.png", // gray
-  },
-  {
-    name: "facebook",
-    url: "https://www.facebook.com/tauhid.tutul.1",
-    icon: "https://cdn.simpleicons.org/facebook/808080", // gray
-  },
-]
+
 
 export function ContactSection() {
   const ref = useRef(null)
@@ -88,7 +72,7 @@ export function ContactSection() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <Card className="border-border bg-card">
+            <Card className="border-border bg-card hover:bg-[#031315] transition-all duration-500">
               <CardHeader>
                 <CardTitle className="text-foreground">Send me a message</CardTitle>
               </CardHeader>
@@ -183,37 +167,7 @@ export function ContactSection() {
             </div>
           </motion.div>
         </div>
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-16 text-center"
-        >
-          <div className="pt-8 flex flex-col items-center w-full">
-            <h4 className="text-2xl font-bold text-foreground mb-4">Follow Me</h4>
-            <div className="flex justify-center gap-9 w-full">
-              {contactMe.map((platform, index) => (
-                <motion.span
-                  key={platform.name}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                  transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
-                  className="p-2 bg-card border border-border rounded-full text-foreground hover:bg-primary hover:text-primary-foreground transition-colors duration-200 cursor-default"
-                >
-                  <a
-                    href={platform.url}
-                    target="_blank"
-                    className="w-4 h-4 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
-                  >
-                    {/* <span className="text-sm font-medium">{platform.name[0]}</span> */}
-                    <img src={platform.icon} alt={platform.name} className="object-fill" />
-                  </a>
-                </motion.span>
 
-              ))}
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   )
