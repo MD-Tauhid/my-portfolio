@@ -8,7 +8,7 @@ import { HeroSocials } from "@/components/hero-socials"
 
 export function HeroSection() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-background">
+    <section id="home" className="min-h-[50vh] lg:min-h-screen flex items-center justify-center relative overflow-hidden bg-background">
       <BackgroundBeams />
       <HeroSocials />
 
@@ -44,12 +44,12 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <Button
+          {/* <Button
             size="lg"
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-full shadow-lg shadow-primary/25 transition-all hover:scale-105"
             onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}
           >
-            Hire Me
+            Contact Me
           </Button>
           <Button
             // variant="outline"
@@ -58,7 +58,7 @@ export function HeroSection() {
             onClick={() => document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })}
           >
             View My Work
-          </Button>
+          </Button> */}
           <Button
             // variant="ghost"
             size="lg"

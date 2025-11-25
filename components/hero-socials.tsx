@@ -5,7 +5,7 @@ import { socialLinks } from "@/lib/constants"
 
 export function HeroSocials() {
     return (
-        <div className="fixed right-6 top-1/2 -translate-y-1/2 z-50 hidden xl:flex flex-col items-center gap-8">
+        <div className="fixed right-6 left-auto top-1/2 -translate-y-1/2 z-50 flex flex-col items-center gap-8">
             <div className="h-32 w-[1px] bg-gradient-to-b from-transparent via-primary/50 to-transparent" />
 
             <div className="flex flex-col gap-6">
