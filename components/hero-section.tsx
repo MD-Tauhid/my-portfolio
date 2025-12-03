@@ -25,7 +25,7 @@ export function HeroSection() {
         </motion.div>
 
         <div className="mb-8">
-          <TypewriterEffect text="Full-Stack Developer & Creative Technologist" className="text-xl sm:text-2xl lg:text-4xl" />
+          <TypewriterEffect text="Full-Stack Developer" className="text-xl sm:text-2xl lg:text-4xl" />
         </div>
 
         <motion.p

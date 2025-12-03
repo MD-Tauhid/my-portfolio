@@ -38,9 +38,9 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <AboutSection />
-      <ProjectsSection />
       <SkillsSection />
-      <ExperienceSection/>
+      <ProjectsSection />
+      <ExperienceSection />
       <ContactSection />
 
       <footer className="bg-card border-t border-border py-4 px-4 sm:px-6 lg:px-8">

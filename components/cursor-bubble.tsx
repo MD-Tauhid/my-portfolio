@@ -27,8 +27,8 @@ export default function CursorWaterTrail() {
 
      useEffect(() => {
           const handleMove = (e: MouseEvent) => {
-               const x = e.clientX - 30; // center big bubble
-               const y = e.clientY - 30;
+               const x = e.clientX - 20; // center big bubble
+               const y = e.clientY - 20;
 
                // Detect movement
                const dx = e.clientX - lastMousePos.current.x;
