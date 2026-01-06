@@ -6,6 +6,7 @@ import { useRef } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github } from "lucide-react"
+import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog"
 
 const projects = [
   {
@@ -65,7 +66,7 @@ export function ProjectsSection() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -73,16 +74,51 @@ export function ProjectsSection() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
             >
-              <Card className="group hover:shadow-2xl transition-all duration-300 border-border bg-card overflow-hidden">
-                <div className="relative overflow-hidden">
-                  <img
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-
+              <Card className="group hover:shadow-2xl transition-all duration-300 border-border bg-card overflow-hidden pt-0">
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={project.image || "/placeholder.svg"}
+                        alt={project.title}
+                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                  </DialogTrigger>
+                  <DialogContent className="min-w-[50vw] grid md:grid-cols-2 gap-6">
+                    <div className="space-y-4">
+                      <h3 className="text-2xl font-bold text-foreground">{project.title}</h3>
+                      <p className="text-muted-foreground">{project.description}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {project.technologies.map((tech) => (
+                          <span
+                            key={tech}
+                            className="px-3 py-1 text-xs bg-primary/10 text-primary rounded-full border border-primary/20"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                      <div className="flex gap-3 mt-4">
+                        <Button size="sm" className="flex-1" asChild>
+                          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="w-4 h-4 mr-2" />
+                            Live Demo
+                          </a>
+                        </Button>
+                        <Button size="sm" variant="outline" asChild>
+                          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                            <Github className="w-4 h-4" />
+                          </a>
+                        </Button>
+                      </div>
+                    </div>
+                    <div>
+                      <img src={project.image || "/placeholder.svg"} alt={project.title} />
+                    </div>
+                  </DialogContent>
+                </Dialog>
                 <CardHeader>
                   <CardTitle className="text-foreground group-hover:text-primary transition-colors">
                     {project.title}
