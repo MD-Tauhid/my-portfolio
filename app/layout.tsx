@@ -63,6 +63,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://tauhidur-rahman.vercel.app",
   },
+  verification: {
+    google: "RHp2pL6MQNKvnAwntTG_pmBpODIqSAcNyi1a8PIER_I", // 👈 paste your code here
+  },
 }
 
 export default function RootLayout({
