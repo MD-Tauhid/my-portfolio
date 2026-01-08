@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    title: "Tauhid | Full-Stack Developer",
-    description: "Modern web developer portfolio built with Next.js 14.",
+    title: "Tauhidur Rahman | Full-Stack Developer",
+    description: "Welcome to my portfolio — check out my work, skills, and projects.",
     images: ["/portfolio-home.png"],
   },
 };

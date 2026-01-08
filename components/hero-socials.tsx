@@ -45,7 +45,7 @@ export function HeroSocials() {
                 className="writing-vertical-rl text-xs font-medium tracking-widest text-muted-foreground/50 uppercase select-none"
                 style={{ writingMode: 'vertical-rl' }}
             >
-                Follow Me
+                Connect On
             </motion.div>
         </div>
     )
