@@ -8,35 +8,44 @@ import "./globals.css"
 import CursorBubble from "@/components/cursor-bubble"
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tauhid.dev"), // replace with your actual domain
+  metadataBase: new URL("https://tauhidur-rahman.vercel.app"), // replace with your actual domain
   title: {
     default: "Tauhid | Full-Stack Developer",
     template: "%s | Tauhid.dev",
   },
   description:
-    "Portfolio of Tauhid — a developer crafting web experiences with Next.js, TypeScript, Tailwind CSS, and Three.js.",
+    "Portfolio of Tauhidur Rahman — a developer crafting web experiences with Next.js, TypeScript, Tailwind CSS, and Three.js.",
   keywords: [
     "Tauhid",
+    "tauhid",
+    "Tauhidur Rahman",
+    "tauhidur rahman",
+    "Tauhid Tutul",
+    "tauhid tutul",
+    "Software Engineer",
+    "Web developer",
+    "Developer",
+    "Frontend Developer",
     "Next.js Developer",
     "Full Stack Developer",
     "Web Portfolio",
     "JavaScript",
     "Three.js",
   ],
-  authors: [{ name: "Tauhid", url: "https://tauhid.dev" }],
+  authors: [{ name: "Tauhid", url: "https://tauhidur-rahman.vercel.app" }],
   creator: "Tauhid",
   publisher: "Tauhid",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://tauhid.dev",
+    url: "https://tauhidur-rahman.vercel.app",
     siteName: "Tauhid Portfolio",
     title: "Tauhid | Full-Stack Developer",
     description:
       "Explore Tauhid’s projects and experiences as a full-stack web developer.",
     images: [
       {
-        url: "/og-image.jpg", // Place this in your /public folder
+        url: "/portfolio-home.png", // Place this in your /public folder
         width: 1200,
         height: 630,
         alt: "Tauhid Portfolio Preview",
@@ -49,10 +58,10 @@ export const metadata: Metadata = {
     description:
       "Building modern, high-performance web experiences with Next.js, TypeScript, and Tailwind CSS.",
     creator: "@tauhid", // optional, if you have a Twitter handle
-    images: ["/og-image.jpg"],
+    images: ["/portfolio-home.png"],
   },
   alternates: {
-    canonical: "https://tauhid.dev",
+    canonical: "https://tauhidur-rahman.vercel.app",
   },
 }
 

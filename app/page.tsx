@@ -9,15 +9,15 @@ import { Metadata } from "next"
 
 // app/page.jsx
 export const metadata: Metadata = {
-  title: "Home | Tauhid.dev",
+  title: "Tauhidur Rahman | Software Engineer",
   description: "Welcome to my portfolio — check out my work, skills, and projects.",
   openGraph: {
     title: "Tauhid Portfolio Home",
     description: "Building innovative digital experiences with Next.js & TypeScript.",
-    url: "https://tauhid.dev",
+    url: "https://tauhidur-rahman.vercel.app/",
     images: [
       {
-        url: "/og-image-home.jpg",
+        url: "/portfolio-home.png",
         width: 1200,
         height: 630,
         alt: "Tauhid Portfolio Home",
@@ -25,9 +25,9 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    title: "Tauhid | Developer Portfolio",
+    title: "Tauhid | Full-Stack Developer",
     description: "Modern web developer portfolio built with Next.js 14.",
-    images: ["/og-image-home.jpg"],
+    images: ["/portfolio-home.png"],
   },
 };
 
