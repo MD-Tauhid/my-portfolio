@@ -18,10 +18,10 @@ const experiences: Experience[] = [
     period: "Feb 2024 – Present",
     description:
       "Leading the frontend development of enterprise-scale applications. Implemented a comprehensive design system using React and Tailwind CSS, reducing development time by 40%. Optimized application performance, achieving a 98+ Lighthouse score.",
-    technologies: ["React", "Next.js", "TypeScript", "Redux Toolkit", "Tailwind CSS"],
+    technologies: ["React", "Next.js", "TypeScript", "Redux Toolkit", "Tailwind CSS", "Node.js", "Express"],
   },
   {
-    role: "Software Engineer Intern",
+    role: "Trainee Software Engineer",
     company: "Suffix IT",
     period: "Nov 2023 – Jan 2024",
     description:

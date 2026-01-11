@@ -150,8 +150,8 @@ export function ContactSection() {
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground">Phone</h4>
-                  <p className="text-muted-foreground">+880 1303-896678</p>
+                  <h4 className="font-semibold text-foreground">Phone & Whatsapp</h4>
+                  <p className="text-muted-foreground"> +880 1303-896678</p>
                 </div>
               </div>
 

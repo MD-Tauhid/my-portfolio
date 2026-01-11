@@ -51,28 +51,28 @@ export function AboutSection() {
             className="space-y-6"
           >
             <h3 className="text-2xl font-semibold text-foreground">
-              Frontend Engineer & <span className="text-primary">UI/UX Enthusiast</span>
+              Software Engineer & <span className="text-primary">Tech Enthusiast</span>
             </h3>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I am a dedicated Frontend Engineer with a passion for building beautiful, performant, and accessible web applications.
+              I am a dedicated MERN Stack Software Engineer with a passion for building beautiful, performant, and accessible web applications.
               With a strong foundation in <span className="text-foreground font-medium">React ecosystem</span> and modern CSS architecture,
               I transform complex requirements into seamless user experiences.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              My approach combines technical expertise with a keen eye for design. I believe that code is not just about functionality,
+              My approach combines technical expertise with a keen eye for design as a Frontend Engineer. I believe that code is not just about functionality,
               but about crafting digital art that solves real-world problems. I constantly explore new technologies like
               <span className="text-foreground font-medium"> Three.js</span> and <span className="text-foreground font-medium">WebGL</span> to push the boundaries of what's possible on the web.
             </p>
 
             <div className="grid grid-cols-2 gap-6 pt-6">
               <div className="p-4 bg-card/50 backdrop-blur-sm rounded-xl border border-border hover:border-primary/50 transition-colors">
-                <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">2+</div>
+                <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent"> 2+ </div>
                 <div className="text-sm font-medium text-muted-foreground mt-1">Years of Experience</div>
               </div>
               <div className="p-4 bg-card/50 backdrop-blur-sm rounded-xl border border-border hover:border-primary/50 transition-colors">
-                <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">20+</div>
+                <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent"> 20+ </div>
                 <div className="text-sm font-medium text-muted-foreground mt-1">Projects Delivered</div>
               </div>
             </div>

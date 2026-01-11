@@ -13,6 +13,8 @@ const skills = [
   { name: "Node.js", level: 87, icon: "🟢" },
 ]
 
+const otherSkills = ["Node.js", "Express", "Python", "PostgreSQL", "MongoDB", "Docker", "Jest", "Figma", "Git", "CI/CD"]
+
 export function SkillsSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
@@ -70,7 +72,7 @@ export function SkillsSection() {
         >
           <h3 className="text-2xl font-bold text-foreground mb-8">Other Technologies</h3>
           <div className="flex flex-wrap justify-center gap-4">
-            {["Python", "PostgreSQL", "MongoDB", "Docker", "AWS", "GraphQL", "Jest", "Figma"].map((tech, index) => (
+            {otherSkills.map((tech, index) => (
               <motion.span
                 key={tech}
                 initial={{ opacity: 0, y: 20 }}
