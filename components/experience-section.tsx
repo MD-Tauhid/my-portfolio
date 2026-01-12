@@ -8,6 +8,7 @@ type Experience = {
   company: string
   period: string
   description: string
+  details: string[]
   technologies: string[]
 }
 
@@ -18,6 +19,13 @@ const experiences: Experience[] = [
     period: "Feb 2024 – Present",
     description:
       "Leading the frontend development of enterprise-scale applications. Implemented a comprehensive design system using React and Tailwind CSS, reducing development time by 40%. Optimized application performance, achieving a 98+ Lighthouse score.",
+    details: [
+      "Built and maintained scalable front-end applications for a Bangladesh Government BIWTA project, supporting multi-department voyage management with JSON-based APIs, authentication flows, and async data handling.",
+      "Developed responsive, high-performance UIs using React, Next.js, TypeScript, and Tailwind, and Integrated with REST APIs and Java/Spring Boot backend services.",
+      "Improved UI performance by up to 10× by optimizing component re-renders using useMemo, useCallback, and other hooks.",
+      "Applied Atomic Design principles, reducing debugging time by 30% and improving long-term maintainability.",
+      "Collaborated in a 10-member agile team, participating in sprint planning, code reviews, and async communication."
+    ],
     technologies: ["React", "Next.js", "TypeScript", "Redux Toolkit", "Tailwind CSS", "Node.js", "Express"],
   },
   {
@@ -26,7 +34,12 @@ const experiences: Experience[] = [
     period: "Nov 2023 – Jan 2024",
     description:
       "Collaborated with senior developers to build and maintain internal tools. Refactored legacy codebases to modern React standards, improving maintainability and code quality. Assisted in setting up CI/CD pipelines.",
-    technologies: ["React", "JavaScript", "Python", "Django", "Docker"],
+    details: [
+      "Contributed to front-end features using HTML, CSS, JavaScript, React, Redux Toolkit, and Socket.io. ",
+      "Quickly ramped up on new technologies through mentorship and independent learning.",
+      "Assisted in implementing real-time UI updates and state management in production projects."
+    ],
+    technologies: ["React", "JavaScript", "Socket.io", "Python", "Django", "Docker"],
   },
 ]
 
@@ -92,7 +105,11 @@ export function ExperienceSection(): JSX.Element {
                   <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
                     {exp.description}
                   </p>
-
+                  <ul className="list-disc list-inside space-y-2 mb-6 text-muted-foreground">
+                    {exp.details.map((detail, idx) => (
+                      <li key={idx}>{detail}</li>
+                    ))}
+                  </ul>
                   <div className="flex flex-wrap gap-2">
                     {exp.technologies.map((tech, idx) => (
                       <span
