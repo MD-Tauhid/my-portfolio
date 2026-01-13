@@ -14,7 +14,7 @@ type Experience = {
 
 const experiences: Experience[] = [
   {
-    role: "Junior Software Engineer",
+    role: "Junior Software Engineer Frontend",
     company: "Suffix IT",
     period: "Feb 2024 – Present",
     description:
@@ -29,7 +29,7 @@ const experiences: Experience[] = [
     technologies: ["React", "Next.js", "TypeScript", "Redux Toolkit", "Tailwind CSS", "Node.js", "Express"],
   },
   {
-    role: "Trainee Software Engineer",
+    role: "Trainee Software Engineer Frontend",
     company: "Suffix IT",
     period: "Nov 2023 – Jan 2024",
     description:
@@ -39,7 +39,7 @@ const experiences: Experience[] = [
       "Quickly ramped up on new technologies through mentorship and independent learning.",
       "Assisted in implementing real-time UI updates and state management in production projects."
     ],
-    technologies: ["React", "JavaScript", "Socket.io", "Python", "Django", "Docker"],
+    technologies: ["React", "JavaScript", "Socket.io", "Docker"],
   },
 ]
 

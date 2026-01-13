@@ -69,7 +69,7 @@ export function AboutSection() {
             <div className="grid grid-cols-2 gap-6 pt-6">
               <div className="p-4 bg-card/50 backdrop-blur-sm rounded-xl border border-border hover:border-primary/50 transition-colors">
                 <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent"> 2+ </div>
-                <div className="text-sm font-medium text-muted-foreground mt-1">Years of Experience</div>
+                <div className="text-sm font-medium text-muted-foreground mt-1">Years of Experience in Frontend</div>
               </div>
               <div className="p-4 bg-card/50 backdrop-blur-sm rounded-xl border border-border hover:border-primary/50 transition-colors">
                 <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent"> 20+ </div>
