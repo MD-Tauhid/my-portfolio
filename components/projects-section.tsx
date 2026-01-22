@@ -10,10 +10,10 @@ import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog"
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Smart Voyage Management System (BIWTA)",
     description:
-      "A full-stack e-commerce solution built with Next.js, featuring real-time inventory, payment processing, and admin dashboard.",
-    image: "/modern-ecommerce-interface.png",
+      "A Bangladesh Govt. project under BIWTA, which manages the vessel’s voyage between Bangladesh and India with payment processing, and admin dashboard.",
+    image: "/projects/smartVoyage.png",
     technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
     liveUrl: "#",
     githubUrl: "#",
